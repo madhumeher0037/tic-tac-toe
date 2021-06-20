@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
     }
     fun coinAppear(view: View)
     {
+        val result : TextView = findViewById(R.id.result)
+        result.visibility =View.INVISIBLE
         val img: ImageView = view as ImageView
         var tag:Int = img.getTag().toString().toInt()
         Log.i("Tag"," is :$tag")

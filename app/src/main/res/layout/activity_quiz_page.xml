@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quiz_page">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/pg1"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="9"
+                android:maxHeight="10dp"
+                android:progress="0"
+                android:layout_margin="5dp"
+                android:padding="10dp">
+
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is JVM?"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:background="#1E90FF" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/opt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="java virtual machine"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="13dp"
+                android:background="@drawable/option_background">
+            </TextView>
+            <TextView
+                android:id="@+id/opt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="java virus machine"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="13dp"
+                android:background="@drawable/option_background">
+            </TextView>
+            <TextView
+                android:id="@+id/opt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="java viral machine"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="13dp"
+                android:background="@drawable/option_background">
+            </TextView>
+            <TextView
+                android:id="@+id/opt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="java viva machine"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="13dp"
+                android:background="@drawable/option_background">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Back"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Next"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="End"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
