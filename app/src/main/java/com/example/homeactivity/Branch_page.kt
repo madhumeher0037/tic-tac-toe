@@ -15,33 +15,20 @@ class Branch_page : AppCompatActivity() {
         setContentView(R.layout.activity_branch_page)
         val cse_branch=findViewById<TextView>(R.id.CSE)
         val it_branch=findViewById<TextView>(R.id.IT)
-        val next_button=findViewById<Button>(R.id.next2)
         var count:Int = 0
         cse_branch.setOnClickListener {
             count=1
             default_colors()
             cse_branch.setBackgroundColor(Color.parseColor("#FFFFFFFF"))
+            val intent = Intent(this,cse_page::class.java).apply {  }
+            startActivity(intent)
         }
         it_branch.setOnClickListener {
             count=2
             default_colors()
             it_branch.setBackgroundColor(Color.parseColor("#FFFFFFFF"))
-        }
-        next_button.setOnClickListener{
-            when(count)
-            {
-                0 ->{
-                    Toast.makeText(this,"select any option",Toast.LENGTH_SHORT).show()
-                }
-                1 ->{
-                    val intent = Intent(this,cse_page::class.java).apply {  }
-                    startActivity(intent)
-                }
-                2 ->{
-                    val intent = Intent(this,it_page::class.java).apply {  }
-                    startActivity(intent)
-                }
-            }
+            val intent = Intent(this,it_page::class.java).apply {  }
+            startActivity(intent)
         }
     }
     fun default_colors()
@@ -50,5 +37,6 @@ class Branch_page : AppCompatActivity() {
         val it_branch=findViewById<TextView>(R.id.IT)
         cse_branch.setBackgroundColor(Color.parseColor("#FFBC19"))
         it_branch.setBackgroundColor(Color.parseColor("#FFBC19"))
+
     }
 }

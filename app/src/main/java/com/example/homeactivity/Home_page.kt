@@ -19,50 +19,34 @@ class Home_page : AppCompatActivity() {
         val box3=findViewById<TextView>(R.id.Box3)
         val box4=findViewById<TextView>(R.id.Box4)
         var count:Int=0
-        val nextbutton = findViewById<Button>(R.id.next1)
         online_class.setOnClickListener {
             count =1
             default_colors()
             online_class.setBackgroundColor(Color.parseColor("#FFFFFFFF"))
+            var intent= Intent(this,Branch_page::class.java).apply {  }
+            startActivity(intent)
+            finish()
         }
         box2.setOnClickListener {
             count =2
             default_colors()
             box2.setBackgroundColor(Color.parseColor("#FFFFFFFF"))
+            Toast.makeText(this,"still in work,choose other option",Toast.LENGTH_SHORT).show()
         }
         box3.setOnClickListener {
             count =3
             default_colors()
             box3.setBackgroundColor(Color.parseColor("#FFFFFFFF"))
+            Toast.makeText(this,"still in work,choose other option",Toast.LENGTH_SHORT).show()
+
         }
         box4.setOnClickListener {
             count =4
             default_colors()
             box4.setBackgroundColor(Color.parseColor("#FFFFFFFF"))
+            Toast.makeText(this,"still in work,choose other option",Toast.LENGTH_SHORT).show()
         }
-        nextbutton.setOnClickListener {
-            when(count)
-            {
-                0->{
-                    Toast.makeText(applicationContext,"Choose any option",Toast.LENGTH_SHORT).show()
-                }
-                1 -> {
-                    var intent= Intent(this,Branch_page::class.java).apply {  }
-                    startActivity(intent)
-                    finish()
-                }
-                2 ->{
-                    Toast.makeText(this,"still in work,choose other option",Toast.LENGTH_SHORT).show()
-                }
-                3 ->{
-                    Toast.makeText(this,"still in work,choose other option",Toast.LENGTH_SHORT).show()
-                }
-                4 ->{
-                    Toast.makeText(this,"still in work,choose other option",Toast.LENGTH_SHORT).show()
-                }
-            }
 
-        }
     }
     fun default_colors()
     {

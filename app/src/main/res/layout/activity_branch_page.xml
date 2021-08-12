@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Branch_page"
     android:background="@color/cardview_dark_background">
-    <Button
-        android:id="@+id/next2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onClick"
-        android:text="NEXT"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/grid_view_1"
-        app:layout_constraintStart_toStartOf="@+id/grid_view_1"
-        app:layout_constraintTop_toBottomOf="@+id/grid_view_1" />
 
     <GridLayout
         android:id="@+id/grid_view_1"
